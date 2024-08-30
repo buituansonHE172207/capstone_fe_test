@@ -9,7 +9,7 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { HydrationBoundary } from '@tanstack/react-query'
 import RQProvider from '#utils/providers/RQProvider.js'
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+
 
 function Layout({
   children,
@@ -38,7 +38,7 @@ function Layout({
               <Content>{children}</Content>
             </Frame>
           </HydrationBoundary>
-          <ReactQueryDevtools initialIsOpen={false} />
+
         </RQProvider>
       </PageContextProvider>
     </React.StrictMode>

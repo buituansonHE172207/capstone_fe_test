@@ -124,7 +124,7 @@ const requests = {
 
 const Account = {
   login: (values: object) => requests.post(META.BASE_URL + '/auth/login', '', values),
-  register: (values: object) => requests.post('account/register', values),
+  register: (values: string) => requests.post('account/register', values),
 }
 
 const Slide = {
